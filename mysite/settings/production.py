@@ -2,7 +2,7 @@ from .settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost"]
+ALLOWED_HOSTS = ["0.0.0.0"]
 
 ROOT_URLCONF = 'mysite.urls'
 
