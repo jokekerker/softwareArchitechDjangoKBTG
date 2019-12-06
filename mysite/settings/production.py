@@ -19,10 +19,27 @@ DATABASES = {
         'NAME': 'softwareArcihtechDB',
         'USER': 'db_user',
         'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
+        'HOST': 'softwarearcihtechdb.chccmrbctvyy.ap-southeast-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler'
+        },
+    },
+    'loggers': {
+        '': {  # 'catch all' loggers by referencing it with the empty string
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+    },
+}
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.mailgun.org'
