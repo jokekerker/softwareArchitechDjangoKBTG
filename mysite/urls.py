@@ -20,6 +20,7 @@ from polls import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('preScrollingLoan.urls')),
     # path('polls/', include('polls.urls')),
     # don’t do that. It’s silly.
     # path('polls/latest.html', views.index),

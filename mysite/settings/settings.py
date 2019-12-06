@@ -25,6 +25,7 @@ SECRET_KEY = 'kn7n^6=&5p6@8*e)74m*u#p%2z@o+-3)&89r)n%boz*+xw5-1x'
 # Application definition
 
 INSTALLED_APPS = [
+    'preScrollingLoan.apps.PrescrollingloanConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -62,8 +63,6 @@ TEMPLATES = [
         },
     },
 ]
-
-ALLOWED_HOSTS = []
 
 DATABASES = {
     'default': {
