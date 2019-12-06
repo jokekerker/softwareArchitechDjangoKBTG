@@ -19,7 +19,7 @@ DATABASES = {
         'NAME': 'softwarearcihtechdb',
         'USER': 'db_user',
         'PASSWORD': 'password',
-        'HOST': 'softwarearcihtechdb.chccmrbctvyy.ap-southeast-1.rds.amazonaws.com',
+        'HOST': 'softwarearcihtechdbkbtg.chccmrbctvyy.ap-southeast-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
