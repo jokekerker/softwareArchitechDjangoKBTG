@@ -21,6 +21,7 @@ def change_status(request, profile_id):
     profile = get_object_or_404(LoanProfile, pk=profile_id)
     try:
         selected_choice = request.POST['select_state']
+        amount_approve = request.POST['amount_approve']
     except (KeyError, profile.DoesNotExist):
         # Redisplay the question voting form.
         return render(request, 'preScrollingLoan/index.html', {
@@ -29,6 +30,7 @@ def change_status(request, profile_id):
         })
     else:
         profile.status = selected_choice
+        profile.amount_approve = amount_approve
         profile.save()
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a

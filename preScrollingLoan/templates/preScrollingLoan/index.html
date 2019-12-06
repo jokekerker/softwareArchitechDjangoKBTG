@@ -30,8 +30,10 @@
                 <td>{{ profile.scroll }}</td>
                 <td>{{ profile.amount_request }}</td>
                 {% if profile.status == "wait" %}
-                <td><input type="number" name="amount_approve" id="profile{{ forloop.counter }}"
-                           value="{{ profile.amount_approve }}"></td>
+                <td>
+                    <input type="number" name="amount_approve" id="profile{{ forloop.counter }}"
+                           value="{{ profile.amount_approve }}">
+                </td>
                 {% else %}
                 <td>{{ profile.amount_approve }}</td>
                 {% endif %}
