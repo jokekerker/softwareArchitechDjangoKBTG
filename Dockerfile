@@ -1,6 +1,7 @@
 FROM python:3.7
 
 RUN apt-get update \
+    && apt-get install python3-django -y \
     && apt-get install -y --no-install-recommends \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
