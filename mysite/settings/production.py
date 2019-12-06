@@ -16,7 +16,7 @@ CACHES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'softwareArcihtechDB',
+        'NAME': 'softwarearcihtechdb',
         'USER': 'db_user',
         'PASSWORD': 'password',
         'HOST': 'softwarearcihtechdb.chccmrbctvyy.ap-southeast-1.rds.amazonaws.com',
