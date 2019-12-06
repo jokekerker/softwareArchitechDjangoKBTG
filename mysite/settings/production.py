@@ -13,14 +13,17 @@ CACHES = {
     }
 }
 
+POSTGRES_HOST = os.environ.setdefault('POSTGRES_HOST', 'localhost')
+POSTGRES_PORT = os.environ.setdefault('POSTGRES_PORT', '54320')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'softwarearcihtechdb',
         'USER': 'db_user',
         'PASSWORD': 'password',
-        'HOST': 'softwarearcihtechdbkbtg.chccmrbctvyy.ap-southeast-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'HOST': POSTGRES_HOST,
+        'PORT': POSTGRES_PORT,
     }
 }
 

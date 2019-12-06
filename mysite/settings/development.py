@@ -10,14 +10,17 @@ INSTALLED_APPS += [
     'debug_toolbar',
 ]
 
+POSTGRES_HOST = os.environ.setdefault('POSTGRES_HOST', 'localhost')
+POSTGRES_PORT = os.environ.setdefault('POSTGRES_PORT', '54320')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'softwareArcihtechDB',
         'USER': 'db_user',
         'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
-        'PORT': '54320',
+        'HOST': POSTGRES_HOST,
+        'PORT': POSTGRES_PORT,
     }
 }
 
